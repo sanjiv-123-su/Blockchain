@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File and Folder Manager</title>
+</head>
+<body>
+    <h1>File and Folder Manager</h1>
+
+    <div>
+        <h3>Create Folder</h3>
+        <input type="text" id="folderName" placeholder="Folder Name">
+        <button onclick="createFolder()">Create Folder</button>
+    </div>
+
+    <div>
+        <h3>Create File</h3>
+        <input type="text" id="fileName" placeholder="File Name (with extension)">
+        <input type="text" id="fileContent" placeholder="File Content">
+        <button onclick="createFile()">Create File</button>
+    </div>
+
+    <div>
+        <h3>Delete Folder</h3>
+        <input type="text" id="deleteFolderName" placeholder="Folder Name to Delete">
+        <button onclick="deleteFolder()">Delete Folder</button>
+    </div>
+
+    <div id="response" style="margin-top: 20px; color: green;"></div>
